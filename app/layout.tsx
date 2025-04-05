@@ -4,6 +4,7 @@ import "./globals.css";
 import "boxicons/css/boxicons.min.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/mode-toggle";
+import  Navbar from "@/components/navbar/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange >
           <div className="relative min-h-screen">
             <div className="fixed top-1/2 right-0 transform -translate-y-1/2 pe-3 z-50">

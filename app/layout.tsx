@@ -4,7 +4,7 @@ import "./globals.css";
 import "boxicons/css/boxicons.min.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/mode-toggle";
-import  Navbar from "@/components/navbar/navbar";
+import  Navbar from "@/components/nav-home";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
